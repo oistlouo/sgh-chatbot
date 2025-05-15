@@ -45,7 +45,7 @@ export default function Chat() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:4000/chat', {
+      const res = await axios.post('https://sgh-chatbot.onrender.com/chat', {
         message: messageToSend
       });
       const reply = res.data.reply;
