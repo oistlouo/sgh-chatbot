@@ -111,5 +111,6 @@ OpenAI (응답 생성), Vercel (프론트엔드), Render (백엔드) 위에서 �
   }
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
+
 app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
